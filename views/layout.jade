@@ -10,7 +10,7 @@ html
     each path in scripts
       script(src=path)
     if locals.javascript
-      script!= javascript
+      script!= javascript.
   body
     include templates/dialog  
     #content!= body
